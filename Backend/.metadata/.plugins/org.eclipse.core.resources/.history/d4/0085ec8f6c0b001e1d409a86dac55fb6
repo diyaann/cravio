@@ -1,0 +1,15 @@
+package com.Food.Service;
+
+import java.util.List;
+
+import com.Food.Entity.Food;
+
+public interface FoodServ {
+	public void addFoodItem(Food foodItem);
+
+	public List<Food> getAllFoodItems();
+	public void deleteFoodItem(int id);
+
+	public List<Food> getFoodItemsByCategory(String category);
+
+}

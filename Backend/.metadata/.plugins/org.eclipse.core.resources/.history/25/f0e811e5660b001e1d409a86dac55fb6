@@ -1,0 +1,30 @@
+package com.admin.service;
+
+import java.util.List;
+
+public class AdminService {
+
+	public void saveAdmin(Admin admin);
+
+	public List<Menu> getAllMenus();
+
+	public List<Menu> deleteMenu(int id);
+
+	public void addMenu(Menu menu);
+
+	public void addFoodItem(Food foodItem);
+
+	public List<Food> getAllFoodItems();
+	
+	public Admin findAdminByEmail(String email);
+	
+	public Admin findAdminByEmailAndPassword(String email, String password);
+
+	public void deleteFoodItem(int id);
+
+	public List<Food> getFoodItemsByCategory(String category);
+
+}
+
+
+}

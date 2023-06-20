@@ -1,0 +1,13 @@
+package com.Food.Service;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+
+import com.Food.Repository.FoodRepo;
+
+@Service
+public class FoodServImpl implements FoodServ{
+	@Autowired
+	private FoodRepo foodRepository;
+
+}

@@ -1,0 +1,19 @@
+package com.Food.Service;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+
+import com.Food.Entity.Food;
+
+@Service
+public class FoodServImpl implements FoodServ{
+	@Autowired
+	private FoodRepo foodRepository;
+	
+	@Override
+	public void addFoodItem(Food foodItem) {
+		// TODO Auto-generated method stub
+		foodRepository.save(foodItem);
+	}
+
+}

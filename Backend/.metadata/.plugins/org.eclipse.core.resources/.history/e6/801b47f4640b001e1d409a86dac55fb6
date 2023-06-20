@@ -1,0 +1,8 @@
+package com.Food.Service;
+
+import org.springframework.stereotype.Service;
+
+@Service
+public class FoodServImpl implements FoodServ {
+
+}

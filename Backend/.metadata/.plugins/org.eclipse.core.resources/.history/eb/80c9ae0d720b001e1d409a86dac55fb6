@@ -1,0 +1,7 @@
+package com.Cart.Service;
+
+import org.springframework.stereotype.Service;
+@Service
+public interface CartServImpl  implements CartServ{
+
+}

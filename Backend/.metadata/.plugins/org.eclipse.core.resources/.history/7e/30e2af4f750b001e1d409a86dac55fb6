@@ -1,0 +1,40 @@
+package com.Customer.Service;
+
+import java.util.List;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+
+import com.Customer.Entity.Customer;
+import com.Customer.Repository.CustomerRepo;
+
+@Service
+public class CustomerServImpl {
+	@Autowired
+	private CustomerRepo customerRepository;
+	
+
+	
+	public void registerCustomer(Customer customer) {
+		// TODO Auto-generated method stub
+		customerRepository.save(customer);
+	}
+	
+	public Customer findCustomerByEmailAndPassword(String tempCustomerEmail, String tempCustomerPassword) {
+		// TODO Auto-generated method stub
+		return customerRepository.findByCustomerEmailAndCustomerPassword(tempCustomerEmail,tempCustomerPassword);
+	}
+	public Customer getCustomerById(int id) {
+		// TODO Auto-generated method stub
+		return customerRepository.findById(id).get();
+	}
+	public Customer getCustomerById(String email) {
+		// TODO Auto-generated method stub
+		return customerRepository.findByCustomerEmail(email);
+	}
+	
+
+}
+
+
+}

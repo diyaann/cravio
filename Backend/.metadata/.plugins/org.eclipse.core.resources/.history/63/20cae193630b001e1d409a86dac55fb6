@@ -1,0 +1,5 @@
+package com.Menu.Repository;
+
+public interface MenuRepo {
+
+}

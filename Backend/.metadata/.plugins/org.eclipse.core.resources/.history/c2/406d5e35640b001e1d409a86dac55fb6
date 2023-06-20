@@ -1,0 +1,5 @@
+package com.Food.Entity;
+
+public class Food {
+
+}

@@ -1,0 +1,9 @@
+package com.Menu.Service;
+
+import java.awt.Menu;
+import java.util.List;
+
+public class MenuServ {
+	public List<Menu> getAllMenus();
+
+}

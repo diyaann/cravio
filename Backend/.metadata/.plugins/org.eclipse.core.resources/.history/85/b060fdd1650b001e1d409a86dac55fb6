@@ -1,0 +1,22 @@
+package com.Menu.Service;
+
+import java.util.List;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+
+import com.Menu.Entity.Menu;
+import com.Menu.Repository.MenuRepo;
+
+
+@Service
+public class MenuServImpl implements MenuSerV {
+	@Autowired
+	private MenuRepo menuRepository;
+
+	@Override
+	public List<Menu> getAllMenus() {
+		// TODO Auto-generated method stub
+		return MenuRepo.findAll();
+
+}

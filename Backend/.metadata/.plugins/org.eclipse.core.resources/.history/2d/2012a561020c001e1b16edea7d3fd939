@@ -1,0 +1,71 @@
+package com.capstone.cart.model;
+
+import javax.persistence.Column;
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.Id;
+import javax.persistence.Table;
+
+@Entity
+@Table(name = "cart")
+public class Cart {
+	
+	@Id
+	@GeneratedValue(strategy = GenerationType.IDENTITY)
+	@Column(name = "cartid")
+	private int cartid;
+	
+	@Column(name = "userid")
+	private int userid;
+	
+	@Column(name = "prodid")
+	private int[] prodid;
+	
+	@Column(name = "prodname")
+	private String[] prodname;
+	
+	@Column(name = "price")
+	private int price;
+	
+	
+
+	public int getCartid() {
+		return cartid;
+	}
+
+	public int getUserid() {
+		return userid;
+	}
+
+	public void setUserid(int userid) {
+		this.userid = userid;
+	}
+
+	public Long[] getProdid() {
+		return prodid;
+	}
+
+	public void setProdid(Long[] prodid) {
+		this.prodid = prodid;
+	}
+
+	public String[] getProdname() {
+		return prodname;
+	}
+
+	public void setProdname(String[] prodname) {
+		this.prodname = prodname;
+	}
+
+	public int getPrice() {
+		return price;
+	}
+
+	public void setPrice(int price) {
+		this.price = price;
+	}
+	
+	
+
+}

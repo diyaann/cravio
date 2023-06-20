@@ -1,0 +1,18 @@
+package com.Food.Controller;
+
+import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.RequestBody;
+import org.springframework.web.bind.annotation.RestController;
+
+import com.Food.Entity.Food;
+
+
+@RestController
+public class FoodController {
+	@PostMapping("admin/foodItems")
+	public String addFoodItem(@RequestBody Food foodItem) {
+		AdminService.addFoodItem(foodItem);
+		return "Hi admin Food Item " + foodItem.getFood_name() + " Has been addded";
+	}
+
+}

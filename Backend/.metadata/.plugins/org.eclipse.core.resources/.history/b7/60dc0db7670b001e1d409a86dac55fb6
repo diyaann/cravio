@@ -1,0 +1,12 @@
+package com.Food.Service;
+
+import java.util.List;
+
+import com.Food.Entity.Food;
+
+public class FoodServ {
+	public void addFoodItem(Food foodItem);
+
+	public List<Food> getAllFoodItems();
+
+}

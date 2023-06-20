@@ -1,0 +1,5 @@
+package com.Food.Repository;
+
+public interface FoodRepo {
+
+}

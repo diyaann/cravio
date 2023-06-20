@@ -1,0 +1,10 @@
+package com.Cart.Service;
+
+import org.springframework.stereotype.Service;
+
+import com.restaurant.project.cart.service.CartService;
+
+@Service
+public interface CartServImpl  implements CartServ{
+
+}

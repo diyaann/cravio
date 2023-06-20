@@ -1,0 +1,13 @@
+package com.Food.Repository;
+
+import java.util.List;
+
+import org.springframework.data.jpa.repository.JpaRepository;
+
+
+
+@Repository
+public interface FoodRepo extends JpaRepository<Food, Integer> {
+	List<Food> findByCategory(String category);
+
+}

@@ -1,0 +1,36 @@
+package com.admin.service;
+
+import java.util.List;
+
+import org.springframework.beans.factory.annotation.Autowired;
+
+import com.admin.entity.Admin;
+import com.admin.repository.AdminRepo;
+
+
+public class AdminServImpl {
+	@Autowired
+	private AdminRepo adminRepository;
+
+	
+	public void saveAdmin(Admin admin) {
+		// TODO Auto-generated method stub
+		adminRepository.save(admin);
+	}
+	
+	
+	
+	public Admin findAdminByEmail(String email) {
+		return adminRepository.findByAdminEmail(email);
+	}
+	public Admin findAdminByEmailAndPassword(String email, String password) {
+		// TODO Auto-generated method stub
+		return adminRepository.findByAdminEmailAndAdminPassword(email, password);
+	}
+	
+
+
+}
+
+
+
